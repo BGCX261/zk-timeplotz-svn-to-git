@@ -1,0 +1,24 @@
+<!-- zk.wpd
+	Purpose:
+		
+	Description:
+		
+	History:
+		Thu Nov  5 12:33:48 TST 2009, Created by Jimmy
+
+Copyright (C) 2009 Potix Corporation. All Rights Reserved.
+-->
+<package name="timeplotz" language="xul/html" depends="timelinez,zk.canvas,zul.db">	
+	<script src="ext/timeplot/timeplot-api.js"/>	
+	<script src="ext/timeplot/scripts/timeplot.js"/>
+	<script src="ext/timeplot/scripts/plot.js"/>
+	<script src="ext/timeplot/scripts/sources.js"/>
+	<script src="ext/timeplot/scripts/geometry.js"/>
+	<script src="ext/timeplot/scripts/color.js"/>
+	<script src="ext/timeplot/scripts/math.js"/>
+	<script src="ext/timeplot/scripts/processor.js"/>
+	
+	<widget name="Timeplot"/>
+	<widget name="Plotinfo"/>
+	<widget name="Trendline"/>
+</package>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- lang-addon.xml
+	Purpose:
+		
+	Description:
+		
+	History:
+		Thu Nov  5 12:33:06 TST 2009, Created by Jimmy
+
+Copyright (C) 2009 Potix Corporation. All Rights Reserved.
+-->
+
+<language-addon>
+	<!-- The name of this addon. It must be unique -->
+	<addon-name>timeplot</addon-name>
+	<!-- Specifies what other addon this depends
+		<depends></depends>
+	-->
+
+	<!-- Which language this addon will be added to -->
+	<language-name>xul/html</language-name>
+
+	<version>
+		<version-class>org.zkforge.timeplot.Version</version-class>
+		<version-uid>1.1.51-FL</version-uid>
+		<zk-version>5.0.0</zk-version><!-- or later -->
+	</version>
+
+	<!-- [Optional, Multiple] Defines the version of a JavaScript module,
+		such that, if the version is changed, the browser will reload them.
+		The name is either a package's name or a portion of it.
+	-->
+	<javascript-module name="timeplotz" version="1.1.51-FL" />
+	<!--  
+		<javascript
+		src="http://static.simile.mit.edu/timeplot/api/1.0/timeplot-api.js"
+		charset="UTF-8" />
+		
+	-->
+	<!-- The higher the number, the earlier this addon is loaded.
+		Default: 0
+		<priority>0</priority>
+	-->
+
+	<zscript>import org.zkforge.timeplot.*;</zscript>
+
+	<component>
+		<component-name>timeplot</component-name>
+		<component-class>org.zkforge.timeplot.Timeplot</component-class>
+		<widget-class>timeplotz.Timeplot</widget-class>
+		<mold>
+			<mold-name>default</mold-name>
+			<mold-uri>mold/timeplot.js</mold-uri>
+			<css-uri>css/timeplot.css.dsp</css-uri>
+		</mold>
+	</component>
+
+
+	<component>
+		<component-name>plotinfo</component-name>
+		<component-class>org.zkforge.timeplot.Plotinfo</component-class>
+		<widget-class>timeplotz.Plotinfo</widget-class>
+	</component>
+	
+	<component>
+		<component-name>trendline</component-name> 
+		<component-class>org.zkforge.timeplot.Trendline</component-class> 
+		<widget-class>timeplotz.Trendline</widget-class> 
+	</component>
+
+</language-addon>

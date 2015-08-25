@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Specification-Title: The ZK Timeplot Components
+Specification-Version: 1.1.51
+Specification-Vendor: Potix Corporation
+Implementation-Title: org.zkforge.timeplot
+Implementation-URL: http://www.zkforge.org/timeplot
+Implementation-Version: 1.1.51
+Implementation-Vendor: Potix Corporation
